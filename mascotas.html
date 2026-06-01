@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mascotas | Consultorio Veterinario Gallardo</title>
+    <style>
+        body { 
+            background-color: #0f172a; 
+            color: white; 
+            text-align: center; 
+            margin: 0; 
+            font-family: sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        header { padding: 20px; background-color: #1e293b; }
+        .header-contenido { display: flex; align-items: center; justify-content: center; gap: 20px; max-width: 1100px; margin: 0 auto; }
+        nav { background-color: #334155; padding: 15px; }
+        nav a { color: #38bdf8; text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; }
+        .contenido-principal { 
+            max-width: 1200px; 
+            width: 100%; 
+            margin: 30px auto; 
+            padding: 0 20px; 
+            flex: 1; 
+            box-sizing: border-box; 
+            text-align: left; 
+        }
+        .seccion-tabla { 
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 25px; 
+            border-radius: 10px; 
+            border: 1px solid #1e293b; 
+            overflow-x: auto;
+        }
+        .seccion-tabla h2 { color: #38bdf8; margin-top: 0; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+        .tabla-datos { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .tabla-datos th { background-color: #1e293b; color: #38bdf8; padding: 10px; font-weight: bold; border-bottom: 2px solid #38bdf8; font-size: 0.9rem; text-align: left; }
+        .tabla-datos td { padding: 10px; border-bottom: 1px solid #334155; font-size: 0.85rem; }
+        .tabla-datos tr:nth-child(even) { background-color: rgba(255, 255, 255, 0.02); }
+        .tabla-datos tr:hover { background-color: rgba(56, 189, 248, 0.05); }
+        footer { background-color: #020617; padding: 25px; border-top: 2px solid #38bdf8; margin-top: auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-contenido">
+            <img src="imagesssss.jpeg" width="120" height="100" alt="Logo">
+            <h1>Consultorio Veterinario Gallardo</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="veterinarios.html">Veterinarios</a>
+        <a href="citas.html">Citas</a>
+        <a href="historial.html">Historial</a>
+    </nav>
+    <main class="contenido-principal">
+        <section class="seccion-tabla">
+            <h2>Mascotas</h2>
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>id_mascota</th>
+                        <th>nombre_mascota</th>
+                        <th>especie</th>
+                        <th>raza</th>
+                        <th>genero</th>
+                        <th>id_dueno</th>
+                        <th>num_chip</th>
+                        <th>caracteristicas_esp</th>
+                        <th>estancia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>501</td><td>Bobby</td><td>Canino</td><td>Labrador Retriever</td><td>Macho</td><td>001</td><td>CP-999</td><td>Marca blanca (ojo)</td><td>4 días</td></tr>
+                    <tr><td>502</td><td>Luna</td><td>Gato</td><td>Siamés</td><td>Hembra</td><td>002</td><td>cp_002</td><td>rayas en la espalda</td><td>2 días</td></tr>
+                    <tr><td>503</td><td>Rocky</td><td>Canino</td><td>Pitbull</td><td>Macho</td><td>003</td><td>cp_003</td><td>marca en la pata</td><td>3 días</td></tr>
+                    <tr><td>504</td><td>Coco</td><td>Canino</td><td>Poodle</td><td>Hembra</td><td>004</td><td>cp_004</td><td>cicatriz en la pata</td><td>6 días</td></tr>
+                    <tr><td>505</td><td>Mía</td><td>Gato</td><td>Persa</td><td>Hembra</td><td>005</td><td>cp_005</td><td>cicatriz en el oido</td><td>1 día</td></tr>
+                    <tr><td>506</td><td>Toby</td><td>Canino</td><td>Beagle</td><td>Macho</td><td>006</td><td>cp_006</td><td>marca blanca</td><td>2 días</td></tr>
+                    <tr><td>507</td><td>Simba</td><td>Gato</td><td>Mestizo</td><td>Macho</td><td>007</td><td>cp_007</td><td>ojo de color</td><td>3 días</td></tr>
+                    <tr><td>508</td><td>Nala</td><td>Canino</td><td>Golden Retriever</td><td>Hembra</td><td>008</td><td>cp_008</td><td>cicatriz en la cola</td><td>4 días</td></tr>
+                    <tr><td>509</td><td>Pelusa</td><td>Gato</td><td>Angora</td><td>Hembra</td><td>009</td><td>cp_009</td><td>cicatriz en la oreja</td><td>1 día</td></tr>
+                    <tr><td>510</td><td>Bruno</td><td>Canino</td><td>Boxer</td><td>Macho</td><td>010</td><td>cp_010</td><td>oreja lastimada</td><td>2 días</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p><b>Nombre completo:</b> Adame Gallardo Jose Abraham</p>
+        <p><b>No. control completo:</b> 0789 | <b>Grupo:</b> J</p>
+        <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 15px;">2026 © Derechos de autor reservados</p>
+    </footer>
+</body>
+</html>
