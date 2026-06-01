@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes | Consultorio Veterinario Gallardo</title>
+    <style>
+
+        body { 
+            background-color: #0f172a; 
+            color: white; 
+            text-align: center; 
+            margin: 0; 
+            font-family: sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        header { 
+            padding: 20px; 
+            background-color: #1e293b; 
+        }
+        .header-contenido { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 20px; 
+            max-width: 1100px; 
+            margin: 0 auto; 
+        }
+        nav { 
+            background-color: #334155; 
+            padding: 15px; 
+        }
+        nav a { 
+            color: #38bdf8; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+        }
+        .contenido-principal { 
+            max-width: 1100px; 
+            width: 100%; 
+            margin: 30px auto; 
+            padding: 20px; 
+            flex: 1; 
+            box-sizing: border-box; 
+        }
+
+        .seccion-tabla { 
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 25px; 
+            border-radius: 10px; 
+            border: 1px solid #1e293b; 
+        }
+        h2 { 
+            color: #38bdf8; 
+            margin-top: 0; 
+            text-align: left; 
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+        }
+        .tabla-datos { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px; 
+            text-align: left; 
+        }
+        .tabla-datos th { 
+            background-color: #1e293b; 
+            color: #38bdf8; 
+            padding: 12px; 
+            font-weight: bold; 
+            border-bottom: 2px solid #38bdf8; 
+        }
+        .tabla-datos td { 
+            padding: 12px; 
+            border-bottom: 1px solid #334155; 
+            font-size: 0.95rem; 
+        }
+        .tabla-datos tr:nth-child(even) { 
+            background-color: rgba(255, 255, 255, 0.02); 
+        }
+        .tabla-datos tr:hover { 
+            background-color: rgba(56, 189, 248, 0.05); 
+        }
+
+        footer { 
+            background-color: #020617; 
+            padding: 25px; 
+            border-top: 2px solid #38bdf8; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-contenido">
+            <img src="imagesssss.jpeg" width="120" height="100" alt="Logo">
+            <h1>Consultorio Veterinario Gallardo</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="veterinarios.html">Veterinarios</a>
+        <a href="citas.html">Citas</a>
+        <a href="historial.html">Historial</a>
+    </nav>
+    <main class="contenido-principal">
+        <section class="seccion-tabla">
+            <h2>Clientes</h2>
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>ID Cliente</th>
+                        <th>Nombre Dueño</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
+                        <th>Email</th>
+                        <th>ID Mascota</th>
+                        <th>Nombre Mascota</th>
+                        <th>Especie</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>CLI-001</td><td>Juan Pérez Martínez</td><td>555-0102</td><td>Av. Principal #123</td><td>juan.perez@email.com</td><td>501</td><td>Max</td><td>Canino</td></tr>
+                    <tr><td>CLI-002</td><td>María 
+G
+42.10arcía López</td><td>555-0199</td><td>Calle Roble #45</td><td>maria.garcia@email.com</td><td>502</td><td>Luna</btd><td>Gato</td></tr>
+                    <tr><td>CLI-003</td><td>Carlos Ruiz Esparza</td><td>555-0244</td><td>Privada Sauces #8</td><td>carlos.ruiz@email.com</td><td>503</td><td>Rocky</td><td>Canino</td></tr>
+                    <tr><td>CLI-004</td><td>Ana Torres Gómez</td><td>555-0311</td><td>Av. de la Raza #789</td><td>ana.torres@email.com</td><td>504</td><td>Copito</td><td>Roedor</td></tr>
+                    <tr><td>CLI-005</td><td>Luis Hernández Preciado</td><td>555-0455</td><td>Callejón del Beso #12</td><td>luis.hernan@email.com</td><td>505</td><td>Mimi</td><td>Gato</td></tr>
+                    <tr><td>CLI-006</td><td>Sofia Castro Ortiz</td><td>555-0566</td><td>Blvd. Independencia #402</td><td>sofia.castro@email.com</td><td>506</td><td>Toby</td><td>Canino</td></tr>
+                    <tr><td>CLI-007</td><td>Pedro Jiménez Luna</td><td>555-0677</td><td>Av. de los Insurgentes #55</td><td>pedro.jim@email.com</td><td>507</td><td>Bruno</td><td>Canino</td></tr>
+                    <tr><td>CLI-008</td><td>Lucía Méndez Ríos</td><td>555-0788</td><td>Calle Hidalgo #24</td><td>lucia.mendez@email.com</td><td>508</td><td>Simba</td><td>Canino</td></tr>
+                    <tr><td>CLI-009</td><td>Diego Morales Flores</td><td>555-0899</td><td>Paseo Triunfo #612</td><td>diego.mor@email.com</td><td>509</td><td>Bella</td><td>Gato</td></tr>
+                    <tr><td>CLI-010</td><td>Elena Vega Chávez</td><td>555-0911</td><td>Calle Morelos #89</td><td>elena.vega@email.com</td><td>510</td><td>Coco</td><td>Canino</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p><b>Nombre completo:</b> Adame Gallardo Jose Abraham</p>
+        <p><b>No. control completo:</b> 0789 | <b>Grupo:</b> J</p>
+        <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 15px;">2026 © Derechos de autor reservados</p>
+    </footer>
+</body>
+</html>
