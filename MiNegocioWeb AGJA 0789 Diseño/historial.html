@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Historial Clínico | Consultorio Veterinario Gallardo</title>
+    <style>
+        body { 
+            background-color: #0f172a; 
+            color: white; 
+            text-align: center; 
+            margin: 0; 
+            font-family: sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        header { padding: 20px; background-color: #1e293b; }
+        .header-contenido { display: flex; align-items: center; justify-content: center; gap: 20px; max-width: 1100px; margin: 0 auto; }
+        nav { background-color: #334155; padding: 15px; }
+        nav a { color: #38bdf8; text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; }
+        
+        .contenido-principal { 
+            max-width: 1400px; 
+            width: 100%; 
+            margin: 30px auto; 
+            padding: 0 20px; 
+            flex: 1; 
+            box-sizing: border-box; 
+            text-align: left;
+        }
+
+        .seccion-tabla { 
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 25px; 
+            border-radius: 10px; 
+            border: 1px solid #1e293b; 
+            overflow-x: auto;
+        }
+        .seccion-tabla h2 { color: #38bdf8; margin-top: 0; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+        .tabla-datos { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .tabla-datos th { background-color: #1e293b; color: #38bdf8; padding: 12px; font-weight: bold; border-bottom: 2px solid #38bdf8; font-size: 0.9rem; text-align: left; white-space: nowrap; }
+        .tabla-datos td { padding: 12px; border-bottom: 1px solid #334155; font-size: 0.85rem; white-space: nowrap; }
+        .tabla-datos tr:nth-child(even) { background-color: rgba(255, 255, 255, 0.02); }
+        .tabla-datos tr:hover { background-color: rgba(56, 189, 248, 0.05); }
+        
+        footer { background-color: #020617; padding: 25px; border-top: 2px solid #38bdf8; margin-top: auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-contenido">
+            <img src="imagesssss.jpeg" width="120" height="100" alt="Logo">
+            <h1>Consultorio Veterinario Gallardo</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="veterinarios.html">Veterinarios</a>
+        <a href="citas.html">Citas</a>
+        <a href="historial.html">Historial</a>
+    </nav>
+    
+    <main class="contenido-principal">
+        <section class="seccion-tabla">
+            <h2>Mascotas Historial</h2>
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>id_historial</th>
+                        <th>id_mascota</th>
+                        <th>nombre_mascota</th>
+                        <th>id_veterinario</th>
+                        <th>fecha</th>
+                        <th>peso</th>
+                        <th>temperatura</th>
+                        <th>frecuencia_cardiaca</th>
+                        <th>frecuencia_respiratoria</th>
+                        <th>resultado</th>
+                        <th>proceso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>HIS-001</td><td>502</td><td>Luna</td><td>VET-02</td><td>2026-05-10</td><td>3.5 kg</td><td>38.5</td><td>120 lpm</td><td>22 rpm</td><td>Observación Crítica</td><td>Monitoreo continuo</td></tr>
+                    <tr><td>HIS-002</td><td>501</td><td>Max</td><td>VET-01</td><td>2026-05-11</td><td>28.2 kg</td><td>38.9</td><td>85 lpm</td><td>18 rpm</td><td>Estable</td><td>Vacuna triple aplicada</td></tr>
+                    <tr><td>HIS-003</td><td>503</td><td>Rocky</td><td>VET-03</td><td>2026-05-11</td><td>11.5 kg</td><td>38.4</td><td>90 lpm</td><td>20 rpm</td><td>Estable</td><td>Limpieza e inspección</td></tr>
+                    <tr><td>HIS-004</td><td>504</td><td>Copito</td><td>VET-08</td><td>2026-05-12</td><td>0.2 kg</td><td>37.8</td><td>200 lpm</td><td>32 rpm</td><td>Estable</td><td>Corte preventivo</td></tr>
+                    <tr><td>HIS-005</td><td>507</td><td>Bruno</td><td>VET-01</td><td>2026-05-13</td><td>34.0 kg</td><td>38.6</td><td>78 lpm</td><td>16 rpm</td><td>Estable</td><td>Retiro de suturas</td></tr>
+                    <tr><td>HIS-006</td><td>505</td><td>Mimi</td><td>VET-04</td><td>2026-05-14</td><td>4.1 kg</td><td>39.0</td><td>115 lpm</td><td>24 rpm</td><td>Tratamiento Agudo</td><td>Inyección de ampolleta</td></tr>
+                    <tr><td>HIS-007</td><td>506</td><td>Toby</td><td>VET-06</td><td>2026-05-14</td><td>6.2 kg</td><td>38.2</td><td>95 lpm</td><td>18 rpm</td><td>Estable</td><td>Control de calorías</td></tr>
+                    <tr><td>HIS-008</td><td>508</td><td>Simba</td><td>VET-01</td><td>2026-05-15</td><td>2.1 kg</td><td>39.1</td><td>130 lpm</td><td>26 rpm</td><td>Estable</td><td>Suministro de medicina</td></tr>
+                    <tr><td>HIS-009</td><td>509</td><td>Bella</td><td>VET-02</td><td>2026-05-15</td><td>3.9 kg</td><td>38.3</td><td>110 lpm</td><td>22 rpm</td><td>Estable</td><td>Desparasitante oral</td></tr>
+                    <tr><td>HIS-010</td><td>510</td><td>Coco</td><td>VET-05</td><td>2026-05-16</td><td>8.5 kg</td><td>38.7</td><td>105 lpm</td><td>20 rpm</td><td>Estable</td><td>Sesión de vaporizaciones</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p><b>Nombre completo:</b> Adame Gallardo Jose Abraham</p>
+        <p><b>No. control completo:</b> 0789 | <b>Grupo:</b> J</p>
+        <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 15px;">2026 © Derechos de autor reservados</p>
+    </footer>
+</body>
+</html>

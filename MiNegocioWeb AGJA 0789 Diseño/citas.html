@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Citas | Consultorio Veterinario Gallardo</title>
+    <style>
+        body { 
+            background-color: #0f172a; 
+            color: white; 
+            text-align: center; 
+            margin: 0; 
+            font-family: sans-serif; 
+            display: flex;
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        header { padding: 20px; background-color: #1e293b; }
+        .header-contenido { display: flex; align-items: center; justify-content: center; gap: 20px; max-width: 1100px; margin: 0 auto; }
+        nav { background-color: #334155; padding: 15px; }
+        nav a { color: #38bdf8; text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; }
+        
+
+        .contenido-principal { 
+            max-width: 1500px; 
+            width: 100%; 
+            margin: 30px auto; 
+            padding: 0 20px; 
+            display: flex; 
+            gap: 25px; 
+            flex: 1; 
+            box-sizing: border-box; 
+            text-align: left;
+        }
+
+        .seccion-formulario { 
+            flex: 1; 
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 25px; 
+            border-radius: 10px; 
+            border: 1px solid #1e293b; 
+            height: fit-content;
+        }
+        .seccion-formulario h2 { color: #38bdf8; margin-top: 0; margin-bottom: 20px; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+        .grupo-campo { margin-bottom: 12px; }
+        label { display: block; margin-bottom: 5px; color: #94a3b8; font-size: 0.9rem; font-weight: bold; }
+        input { width: 100%; padding: 8px; background-color: #1e293b; border: 1px solid #334155; border-radius: 5px; color: white; box-sizing: border-box; }
+        input:focus { border-color: #38bdf8; outline: none; }
+        .btn-enviar { background-color: #38bdf8; color: #0f172a; border: none; padding: 12px 25px; font-weight: bold; border-radius: 5px; cursor: pointer; width: 100%; margin-top: 10px; }
+
+        .seccion-tabla { 
+            flex: 3; 
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 25px; 
+            border-radius: 10px; 
+            border: 1px solid #1e293b; 
+            overflow-x: auto;
+        }
+        .seccion-tabla h2 { color: #38bdf8; margin-top: 0; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+        .tabla-datos { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .tabla-datos th { background-color: #1e293b; color: #38bdf8; padding: 10px; font-weight: bold; border-bottom: 2px solid #38bdf8; font-size: 0.9rem; text-align: left; }
+        .tabla-datos td { padding: 10px; border-bottom: 1px solid #334155; font-size: 0.85rem; }
+        .tabla-datos tr:nth-child(even) { background-color: rgba(255, 255, 255, 0.02); }
+        .tabla-datos tr:hover { background-color: rgba(56, 189, 248, 0.05); }
+        
+        footer { background-color: #020617; padding: 25px; border-top: 2px solid #38bdf8; margin-top: auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-contenido">
+            <img src="imagesssss.jpeg" width="120" height="100" alt="Logo">
+            <h1>Consultorio Veterinario Gallardo</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="veterinarios.html">Veterinarios</a>
+        <a href="citas.html">Citas</a>
+        <a href="historial.html">Historial</a>
+    </nav>
+    
+    <main class="contenido-principal">
+        <section class="seccion-formulario">
+            <h2>Agendar Cita</h2>
+            <form action="#" method="POST" onsubmit="alert('Cita registrada exitosamente'); return false;">
+                <div class="grupo-campo"><label>id_cita:</label><input type="text" placeholder="Ej: CIT-911" required></div>
+                <div class="grupo-campo"><label>id_mascota:</label><input type="text" placeholder="Ej: 501" required></div>
+                <div class="grupo-campo"><label>id_veterinario:</label><input type="text" placeholder="Ej: VET-01" required></div>
+                <div class="grupo-campo"><label>fecha:</label><input type="date" required></div>
+                <div class="grupo-campo"><label>peso:</label><input type="text" placeholder="Ej: 12.4 kg" required></div>
+                <div class="grupo-campo"><label>temperatura:</label><input type="text" placeholder="Ej: 38.5" required></div>
+                <div class="grupo-campo"><label>diagnostico:</label><input type="text" required></div>
+                <div class="grupo-campo"><label>tratamiento:</label><input type="text" required></div>
+                <div class="grupo-campo"><label>costo:</label><input type="number" placeholder="Ej: 500" required></div>
+                <button type="submit" class="btn-enviar">Guardar Cita</button>
+            </form>
+        </section>
+
+        <section class="seccion-tabla">
+            <h2>Citas</h2>
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>id_cita</th>
+                        <th>id_mascota</th>
+                        <th>id_veterinario</th>
+                        <th>fecha</th>
+                        <th>peso</th>
+                        <th>temperatura</th>
+                        <th>diagnostico</th>
+                        <th>tratamiento</th>
+                        <th>costo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>CIT-901</td><td>501</td><td>VET-02</td><td>2026-05-20</td><td>3.5 kg</td><td>38.5</td><td>Infección oído</td><td>Gotas óticas</td><td>950</td></tr>
+                    <tr><td>CIT-902</td><td>502</td><td>VET-01</td><td>2026-05-20</td><td>28.2 kg</td><td>38.9</td><td>Vacunación anual</td><td>Refuerzo rabia</td><td>400</td></tr>
+                    <tr><td>CIT-903</td><td>503</td><td>VET-04</td><td>2026-05-21</td><td>4.1 kg</td><td>39.0</td><td>Alergia leve</td><td>Antihistamínico</td><td>700</td></tr>
+                    <tr><td>CIT-904</td><td>504</td><td>VET-03</td><td>2026-05-21</td><td>11.5 kg</td><td>38.4</td><td>Revisión dental</td><td>Limpieza básica</td><td>400</td></tr>
+                    <tr><td>CIT-905</td><td>505</td><td>VET-08</td><td>2026-05-22</td><td>0.2 kg</td><td>37.8</td><td>Corte de garras</td><td>Recorte estético</td><td>300</td></tr>
+                    <tr><td>CIT-906</td><td>506</td><td>VET-01</td><td>2026-05-22</td><td>34.0 kg</td><td>38.6</td><td>Chequeo post-op</td><td>Retiro puntos</td><td>400</td></tr>
+                    <tr><td>CIT-907</td><td>507</td><td>VET-06</td><td>2026-05-23</td><td>6.2 kg</td><td>38.2</td><td>Sobrepeso G1</td><td>Dieta controlada</td><td>500</td></tr>
+                    <tr><td>CIT-908</td><td>508</td><td>VET-01</td><td>2026-05-23</td><td>2.1 kg</td><td>39.1</td><td>Infección estomacal</td><td>Antibiótico oral</td><td>400</td></tr>
+                    <tr><td>CIT-909</td><td>509</td><td>VET-02</td><td>2026-05-25</td><td>3.9 kg</td><td>38.3</td><td>Desparasitación</td><td>Pastilla preventiva</td><td>400</td></tr>
+                    <tr><td>CIT-910</td><td>510</td><td>VET-05</td><td>2026-05-25</td><td>8.5 kg</td><td>38.7</td><td>Problema respiratorio</td><td>Nebulización</td><td>400</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p><b>Nombre completo:</b> Adame Gallardo Jose Abraham</p>
+        <p><b>No. control completo:</b> 0789 | <b>Grupo:</b> J</p>
+        <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 15px;">2026 © Derechos de autor reservados</p>
+    </footer>
+</body>
+</html>
